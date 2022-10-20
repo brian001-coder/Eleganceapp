@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <title>Feedback.homepage</title>
+    <link rel="stylesheet" type="text/css" href="../static/Homepage.css">
+    <link rel="icon" href="../static/logo.png" type="image/x-icon">
+</head>
+<body>
+  <form  action="/submit" method="POST" >
+
+  <div class="container">
+  <div class="main">
+    <div class="popup">
+      <img src="../static/logo.png">
+    </div>
+
+      <h2 class="logo">Elegance.</h2>
+      <h3 class="heading">Your branding solution of choice.</h3><br>
+
+        <div class="customer">
+            <br><u>Customer's name</u><br>
+            <input class="name" type="text" name="customer" placeholder="Name" id="name"/>
+        </div><br>
+
+        <div class="dealers">
+            <p><h4><i><u>select your dealer.</u></i></h4></p>
+            <select class="select" name="dealer" id="dealer">
+                <option value="">Select your dealer..</option>
+                <option value="Japheth Kiptoo">Japheth kiptoo</option>
+                <option value="Cowan Wekesa">Cowan Wekesa</option>
+                <option value="Emmanuel Kerio">Emmanuel Kerio</option>
+                <option value="Tonny kiptanui">Tonny Kiptanui</option>
+                <option value="Councelia mutai">Councelia Cheptoo</option>
+                <option value="David Eibet">David Kibet</option>
+                <option value="Mark Elliot">Mark Elliot</option>
+                <option value="Brian Kerio">Brian Kerio</option>
+                <option value="Elon Musk">Elon Musk</option>
+                <option value="Jack Dorsey">Jack Dorsey</option>
+            </select>
+        </div>
+
+
+        <div class="radio-group">
+            <u><i><h3>Rate your dealer</h3></i></u>
+            <input type="radio" name="rating" value="1" /> 1
+            <input type="radio" name="rating" value="2" /> 2
+            <input type="radio" name="rating" value="3" /> 3
+            <input type="radio" name="rating" value="4" /> 4
+            <input type="radio" name="rating" value="5" /> 5
+            <input type="radio" name="rating" value="6" /> 6
+            <input type="radio" name="rating" value="7" /> 7
+            <input type="radio" name="rating" value="8" /> 8
+            <input type="radio" name="rating" value="9" /> 9
+            <input type="radio" name="rating" value="10" checked /> 10
+        </div><br>
+
+
+        <div class="services">
+            <u><i><h3>Select the service offered</h3></i></u>
+           <select class="select-group" name="service" id="">
+            <option value="">select service offered to you.</option>
+            <option value="Branding">Branding</option>
+            <option value="Fiber optics and CCTV Installations">Fiber optics and CCTV Installations</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="ERP System Design">ERP System Design</option>
+            <option value="Industrial Robotics">Industrial Robotics</option>
+            <option value="IoT Consultations">IoT Consultations</option>
+            <option value="IOS App Design">IOS App Design</option>
+            <option value="P.O.S Desgn">P.O.S Design</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Android Development">Android Development</option>
+            <option value="Cyber Security and Cryptography">Cyber Security and Cryptography</option>
+           </select>
+        </div><br>
+
+
+
+        <div class="comments">
+            <p style="color:blue" <h3><i><u>Comment on your experience with us.</u></i></h3></p>
+            <textarea class="comments-group" name="comments" id="msg" cols="40" rows="3" placeholder="comments"></textarea>
+        </div>
+
+
+
+        <div class="submitting">
+        <button class="button"><a>Submit</a></button>
+        </div>
+        
+      <div class="messages">
+         {% if message %}
+         <p class="message">{{ message | safe }}</p>
+         {% endif %}
+      </div>
+
+
+    </form>
+  </div>
+</div>
+</body>
+</html>

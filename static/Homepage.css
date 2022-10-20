@@ -1,0 +1,183 @@
+*{
+    margin: 0.5px;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.container{
+    width: 100vw;
+    background:whitesmoke;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main{
+    width: 350px;
+    height: 88vh;
+    background: #ffb;
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    color:black;
+    font-size: 38px;
+    font-weight: lighter;
+    font-family: fantasy;
+}
+
+.heading{
+    font-weight: lighter;
+    letter-spacing: 1.9px;
+    color:black;
+    font-size: 19px;
+    font-family:Haettenschweiler;
+}
+
+.customer{
+    color:blue;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+.customer u{
+    color: blue;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.name{
+    height: 30px;
+    width: 220px;
+    font-weight: bold;
+    background:whitesmoke;
+    border: 3px solid gray;
+    letter-spacing: 2px;
+    padding: 3px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.name:hover{
+    color: black;
+}
+
+.dealers{
+   color: blue;   
+   font-weight: lighter;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.select{
+    height: 30px;
+    width: 250px;
+    font-weight: 700;
+    background: whitesmoke;
+    letter-spacing: 2px;
+    border: 3px solid gray;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+}
+.dealer:focus,
+.dealer:hover{
+    outline: none;
+    border: 3px solid gray;
+}
+
+.radio-group i{
+    color: blue;
+    font-size: 13px;
+    font-weight:lighter;
+}
+
+.radio-group{
+    font-size: 19px;
+    font-weight: 500;
+    display: inline-block;
+}
+ 
+.radio-group input{
+    border-radius: 50%;
+}
+.services u{
+    color: blue;
+    font-size: 13px;
+    font-weight: lighter;
+}
+.select-group{
+    height: 30px;
+    width: 280px;
+    font-weight: 700;
+    background: whitesmoke;
+    letter-spacing: 2px;
+    border: 3px solid gray;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor:pointer;
+}
+
+.comments-group{
+    height:60px;
+    width: 350px;
+    background: whitesmoke;
+    border: 5px solid gray;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    letter-spacing: 1.8px;
+}
+
+.button{
+    height: 40px;
+    width: 70%;
+    background:green;
+    border: 5px solid gray;
+    letter-spacing: 1.8px;
+    border-bottom-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.button:hover{
+    background:greenyellow;
+}
+.messages{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-family: fantasy;
+    font-weight: bold;
+    transition: 2s;
+}
+
+.messages p{
+    color: lightgreen;
+}

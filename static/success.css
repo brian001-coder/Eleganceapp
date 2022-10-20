@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin',sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:white;
+    background: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    padding: 10px 80px;
+    background: olivedrab;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup{
+    width: 400px;
+    background: #ffb;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h3{
+    font-size: 38px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup p{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+.popup button{
+    width: 80%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: green;
+    color: #fff;
+    border: 5px solid gray;
+    outline: none;
+    font-size: 18px;
+    border-bottom-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icons u{
+    font-family: fantasy;
+    color: black;
+    line-break: auto;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.icons ion-icon{
+    color:blue;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: yellowgreen;
+}
+.copyright{
+    color:black;
+    font-weight:bolder;
+    font-family: fantasy;
+    letter-spacing: 1.5px;
+}
